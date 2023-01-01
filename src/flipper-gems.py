@@ -41,7 +41,7 @@ def get_gems_prices():
     
     #threshold = input('Enter the threshold for gems in chaos: ')
     #if threshold == '':
-    threshold = 50
+    threshold = 0
 
     if response.status_code == 200:
     #print the field corrupted gems and not corrupted gems, sometimes the corrupted field is not present
@@ -191,7 +191,7 @@ if button_search == True:
 
     
 # Create a slider to set the threshold
-slider = tk.Scale(root, from_=0, to=2000, orient=tk.HORIZONTAL)
+slider = tk.Scale(root, from_=0, to=1000, orient=tk.HORIZONTAL)
 slider.pack()
 
 # Create a listbox to display the gems
